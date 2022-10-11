@@ -1,17 +1,13 @@
+import React from "react";
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-        <p>
-          Edit and save to reload.
-        </p>
-
-      </header>
+      <p>
+        Hello from App react
+      </p>
+      <a href="/" className='btn btn-primary'>hello from button</a>
     </div>
   );
 }
-
-export default App;
