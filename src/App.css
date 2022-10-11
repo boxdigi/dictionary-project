@@ -1,3 +1,30 @@
 .App {
+  margin: 30px auto 0;
+  border: 1px solid lightgray;
+  max-width: 1000px;
+  display: block;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+}
+
+header {
+  background-color: yellowgreen;
+  padding: 10px 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 25px;
+}
+
+header p {
+  margin: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 5px;
 }
