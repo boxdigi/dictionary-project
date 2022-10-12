@@ -2,7 +2,7 @@ import React from "react";
 import Meaning from "./Meaning";
 
 export default function Results(props) {
-  console.log(props.results.meanings);
+  console.log(props.results);
   if (props.results) {
     return (
       <div className="results">
@@ -14,7 +14,6 @@ export default function Results(props) {
             </div>
           );
         })}
-
       </div>
     );
   } else {
