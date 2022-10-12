@@ -13,11 +13,16 @@ header {
   padding: 10px 0;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 header p {
   margin: 5px;
+}
+
+.results {
+  margin: 10px 50px;
+  text-align: start;
 }
 
 footer {

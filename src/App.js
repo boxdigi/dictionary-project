@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        <h1><i class="fa-solid fa-book-open"></i> Dictionary</h1>
+        <h1><i className="fa-solid fa-book-open"></i> Dictionary</h1>
         <p>you can find a definition of the word, similar words and illustration</p>
       </header>
       <Dictionary />
@@ -18,7 +18,6 @@ export default function App() {
             open-sourced</a></p>
         <p>used <a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">Dictionary</a></p>
       </footer>
-
     </div>
   );
 }
