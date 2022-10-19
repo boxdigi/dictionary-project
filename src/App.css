@@ -20,13 +20,38 @@ header p {
   margin: 5px;
 }
 
-.results {
+.Results {
   margin: 10px 50px;
   text-align: start;
 }
 
+.Meaning {
+  margin: 20px 0;
+}
+
+.Meaning .index-definition {
+  margin-bottom: 10px;
+}
+
+.Meaning .definition {
+  font-size: 18px;
+}
+
+.Example {
+  color: rgb(100, 100, 100);
+}
+
+.Synonyms {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.Synonyms .main {
+  font-weight: bold;
+}
+
 footer {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 
