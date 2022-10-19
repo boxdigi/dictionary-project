@@ -5,7 +5,7 @@ export default function Phonetic(props) {
   if (props.phonetic) {
     return (
       <div>
-        <a href={props.phonetic.audio} target="_blank" rel="noreferrer"> Hello from Phonetic </a>
+        <a href={props.phonetic.audio} target="_blank" rel="noreferrer"> Listen </a>
         <br />
         {props.phonetic.text}
       </div>
