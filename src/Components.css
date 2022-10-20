@@ -1,0 +1,60 @@
+.Results {
+  text-align: start;
+}
+
+.Phonetic {
+  height: 40px;
+}
+
+.Phonetic a {
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid #73636C;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 5px;
+  color: #8C3586;
+  font-weight: 500;
+}
+
+.Phonetic a:hover {
+  background-color: #8C3586;
+  color: #F2F2F2;
+  transition: all 150ms ease-in-out;
+}
+
+
+.Meaning {
+  margin: 10px 0;
+}
+
+.Meaning h4 {
+  font-size: 25px;
+  color: #582559;
+}
+
+.Meaning .index-definition {
+  margin-bottom: 10px;
+}
+
+.Meaning .definition {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.Example {
+  color: #582559;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.Synonyms {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.Synonyms .main {
+  font-weight: 500;
+  font-style: italic;
+  color: #8C3586;
+}
