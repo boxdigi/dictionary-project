@@ -42,10 +42,8 @@ export default function Dictionary(props) {
               defaultValue={props.defaultKeyword}
               onChange={handleKeyword}
             />
-            <button
-              type="submit"
-              className="search btn border btn-light text-muted">
-              <i className="fa-solid fa-magnifying-glass"></i></button>
+            <span className="input-group-text">
+              <i className="fa-solid fa-magnifying-glass"></i></span>
           </div>
           <div className="hint">
             suggested words: yoga, wine, gift...
