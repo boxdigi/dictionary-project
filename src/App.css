@@ -80,3 +80,15 @@ footer a {
   text-decoration: none;
   color: #F2F2F2;
 }
+
+@media(min-width:576px) {
+  .Dictionary .row .one {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  .Dictionary .row .two {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+}

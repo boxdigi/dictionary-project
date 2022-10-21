@@ -3,7 +3,6 @@ import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 
 export default function Results(props) {
-  console.log(props.results);
   if (props.results) {
     return (
       <div className="Results">
@@ -17,6 +16,7 @@ export default function Results(props) {
             );
           })}
         </section>
+
         {props.results.meanings.map(function (meaning, index) {
           return (
             <section key={index}>

@@ -23,7 +23,6 @@
   transition: all 150ms ease-in-out;
 }
 
-
 .Meaning {
   margin: 10px 0;
 }
@@ -59,4 +58,12 @@
   font-weight: 500;
   font-style: italic;
   color: #8C3586;
+}
+
+.Photos img {
+  border-radius: 10px;
+  border: 1px dotted darkgrey;
+  padding: 5px;
+  margin: 10px;
+  max-width: 95%;
 }

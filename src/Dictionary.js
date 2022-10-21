@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
-import Phonetic from "./Phonetic";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -19,6 +18,7 @@ export default function Dictionary(props) {
     let headers = { Authorization: `Bearer ${pexelKey}` };
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelResponse);
+
   }
 
   function handlePexelResponse(response) {
@@ -37,8 +37,10 @@ export default function Dictionary(props) {
   }
 
   function handleResponse(response) {
+    console.log(response);
     console.log(response.data);
     setResults(response.data[0]);
+    setKeyword(response.data[0].word);
   }
 
   function handleKeyword(event) {
@@ -62,16 +64,8 @@ export default function Dictionary(props) {
             suggested words: yoga, wine, gift...
           </div>
         </form>
-        <div className="row">
-          <div className="col-6">
-            <Results results={results} />
-          </div>
-          <div className="col-6">
-            <section>
-              <Photos photos={photos} />
-            </section>
-          </div>
-        </div>
+        <Results results={results} />
+        <Photos photos={photos} />
       </div>
     )
   } else {
