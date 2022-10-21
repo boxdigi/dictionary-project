@@ -28,7 +28,8 @@
   margin: 10px 0;
 }
 
-.Meaning h4 {
+.Meaning h4,
+.Photos h4 {
   font-size: 25px;
   color: #582559;
 }
@@ -51,6 +52,7 @@
 .Synonyms {
   margin: 10px 0;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .Synonyms .main {
