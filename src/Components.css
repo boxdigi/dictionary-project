@@ -62,8 +62,20 @@
 
 .Photos img {
   border-radius: 10px;
-  border: 1px dotted darkgrey;
-  padding: 5px;
+  padding: 10px;
   margin: 10px;
-  max-width: 95%;
+  max-width: 240px;
+  box-shadow: 2px 2px 10px #73636C;
+}
+
+.Photos ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Photos li {
+  display: inline;
+  text-align: center;
 }

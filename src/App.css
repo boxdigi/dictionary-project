@@ -7,7 +7,6 @@
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-color: rgb(201, 166, 198);
-
 }
 
 header {
@@ -28,8 +27,14 @@ header p {
   font-size: 14px;
 }
 
+.App .instruction {
+  font-size: 14px;
+  margin: 5px 15px 0;
+  color: #582559;
+}
+
 form {
-  margin: 15px;
+  margin: 5px 15px;
   padding: 10px;
 }
 

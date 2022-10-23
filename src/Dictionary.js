@@ -14,16 +14,11 @@ export default function Dictionary(props) {
     axios.get(apiUrl).then(handleResponse, function () {
       alert("😨 Oops, we coudn't found the requested word. Please try again or ask Google");
     });
-    const pexelKey = "563492ad6f917000010000013c59b8e3422048228da8aeac56da87f1";
-    let headers = { Authorization: `Bearer ${pexelKey}` };
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
-    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelResponse);
-
   }
 
   function handlePexelResponse(response) {
-    console.log(response.data);
     setPhotos(response.data.photos);
+
   }
 
   function handleSubmit(event) {
@@ -37,10 +32,12 @@ export default function Dictionary(props) {
   }
 
   function handleResponse(response) {
-    console.log(response);
-    console.log(response.data);
     setResults(response.data[0]);
-    setKeyword(response.data[0].word);
+    const pexelKey = "563492ad6f917000010000013c59b8e3422048228da8aeac56da87f1";
+    let headers = { Authorization: `Bearer ${pexelKey}` };
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${response.data[0].word}&per_page=4`;
+    console.log(pexelsApiUrl);
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelResponse);
   }
 
   function handleKeyword(event) {
@@ -61,7 +58,7 @@ export default function Dictionary(props) {
               <i className="fa-solid fa-magnifying-glass"></i></span>
           </div>
           <div className="hint">
-            suggested words: yoga, wine, gift...
+            suggested words: yoga, wine, gift, autumn, sun...
           </div>
         </form>
         <Results results={results} />
