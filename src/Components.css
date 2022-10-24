@@ -42,6 +42,14 @@
   line-height: 1.5;
 }
 
+.definition i {
+  position: relative;
+  font-size: 10px;
+  color: #73636C;
+  top: -1px;
+  margin-right: 5px;
+}
+
 .Example {
   color: #582559;
   font-size: smaller;
