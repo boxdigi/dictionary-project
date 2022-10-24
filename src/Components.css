@@ -60,6 +60,13 @@
   color: #8C3586;
 }
 
+.Synonyms .list-synonym {
+  border: 1px dotted #73636C;
+  margin: 2px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
 .Photos img {
   border-radius: 10px;
   padding: 10px;

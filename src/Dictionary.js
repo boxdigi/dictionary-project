@@ -35,7 +35,7 @@ export default function Dictionary(props) {
     setResults(response.data[0]);
     const pexelKey = "563492ad6f917000010000013c59b8e3422048228da8aeac56da87f1";
     let headers = { Authorization: `Bearer ${pexelKey}` };
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${response.data[0].word}&per_page=4`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${response.data[0].word}&per_page=8`;
     console.log(pexelsApiUrl);
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelResponse);
   }
@@ -54,8 +54,9 @@ export default function Dictionary(props) {
               defaultValue={props.defaultKeyword}
               onChange={handleKeyword}
             />
-            <span className="input-group-text">
-              <i className="fa-solid fa-magnifying-glass"></i></span>
+            <button className="btn btn-outline-secondary" type="submit">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
           <div className="hint">
             suggested words: yoga, wine, gift, autumn, sun...

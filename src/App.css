@@ -48,12 +48,10 @@ form .hint {
 
 .input-group {
   box-shadow: 1px 1px 10px #73636C;
+  background-color: #F2F2F2;
 }
 
-.input-group-text {
-  background-color: white;
-  color: #73636C;
-}
+
 
 .Dictionary section {
   background-color: #F2F2F2;

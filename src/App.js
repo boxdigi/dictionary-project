@@ -11,8 +11,8 @@ export default function App() {
         <h1><i className="fa-solid fa-book-open"></i> Dictionary</h1>
         <p>you can find a definition of the word, similar words and illustration</p>
       </header>
-      <p className="instruction">🕮 Please enter a word you want to look up and <em>scroll down</em> the page to see full results 🕮<br />
-        😀 Have fun!</p>
+      <p className="instruction"><i className="fa-solid fa-book-open-reader"></i> Please enter a word you want to look up and <em>scroll down</em> the page to see full results <i className="fa-solid fa-book-open-reader"></i><br />
+        <i className="fa-regular fa-face-grin"></i> Have fun!</p>
       <Dictionary defaultKeyword="coffee" />
       <footer>
         <p>coded by {" "}
